@@ -1,0 +1,30 @@
+{
+  "name": "textlint-rule-ja-jlpt-kanji",
+  "version": "1.0.0",
+  "description": "JLPT 漢字であることをチェックする textlint ルールです。",
+  "main": "lib/index.js",
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/feb19"
+  },
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "textlint-scripts build",
+    "prepublish": "npm run --if-present build",
+    "test": "textlint-scripts test",
+    "watch": "textlint-scripts build --watch"
+  },
+  "devDependencies": {
+    "@textlint/types": "^14.4.0",
+    "@types/node": "^22.10.2",
+    "textlint-scripts": "^14.4.0",
+    "textlint-tester": "^14.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
