@@ -26,7 +26,7 @@ Via `.textlintrc`(Recommended)
 }
 ```
 
-with [TextlintRuleJaKyoikuKanjiOptions](https://github.com/feb19/textlint-rule-ja-jlpt-kanji/blob/master/src/index.ts)
+with [TextlintRuleJaJlptKanjiOptions](https://github.com/feb19/textlint-rule-ja-jlpt-kanji/blob/master/src/index.ts)
 
 ```json
 {

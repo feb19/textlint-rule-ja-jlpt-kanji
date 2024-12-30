@@ -1,6 +1,6 @@
 import { TextlintRuleModule } from '@textlint/types';
 
-interface TextlintRuleJaKyoikuKanjiOptions {
+interface TextlintRuleJaJlptKanjiOptions {
     allowN5Kanjis?: boolean;
     allowN4Kanjis?: boolean;
     allowN3Kanjis?: boolean;
@@ -21,7 +21,7 @@ const n1 = ['郎', '結', '氏', '衛', '第', '保', '義', '吉', '士', '藤'
 const module: TextlintRuleModule = (context, userOptions) => {
     const { getSource, report, RuleError, Syntax } = context;
   
-    const options: Required<TextlintRuleJaKyoikuKanjiOptions> = {
+    const options: Required<TextlintRuleJaJlptKanjiOptions> = {
       allowN5Kanjis: true,
       allowN4Kanjis: true,
       allowN3Kanjis: true,
@@ -75,4 +75,4 @@ const module: TextlintRuleModule = (context, userOptions) => {
   };
   
   export default module;
-  export type { TextlintRuleJaKyoikuKanjiOptions };
+  export type { TextlintRuleJaJlptKanjiOptions };
